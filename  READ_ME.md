@@ -12,8 +12,8 @@ git clone
 Requirement で列挙したライブラリなどのインストール方法を説明する
 
 ```bash
-git clone https://github.com/hoge/~　Commands
-cd examples
+git clone https://github.com/kouhei-github/Make-DDD-For-Laravel-Stubs.git Commands
+cd Commands
 rm -rf .git
 ```
 
