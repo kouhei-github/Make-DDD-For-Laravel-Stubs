@@ -5,7 +5,7 @@ Service, Repository, UseCase, Interface の作成等を自動で行うコマン�
 
 # Installation
 
-Requirement で列挙したライブラリなどのインストール方法を説明する
+下記コマンドで配置する
 
 ```bash
 $ git clone https://github.com/kouhei-github/Make-DDD-For-Laravel-Stubs.git Commands
