@@ -3,17 +3,45 @@
 Laravel project の app/Console は以下で実行
 Service, Repository, UseCase, Interface の作成等を自動で行うコマンドを作成する
 
-# Installation
+# Laravel プロジェクト(artisan がある場所)でシェルを実行
 
-下記コマンドで配置する
+artisan ディレクトリがある場所(.env を置く場所)に **make-stub-file.sh** を下記内容で作成する
 
 ```bash
-$ git clone https://github.com/kouhei-github/Make-DDD-For-Laravel-Stubs.git Commands
-$ cd Commands
-$ rm -rf .git
+#!/bin/bash
+
+#現在のディレクトリを変数に格納
+CURRENT=$(pwd)
+
+# ディレクトリの移動
+cd app
+
+# ディレクトリの作成
+mkdir -p Services/Interfaces
+mkdir -p UseCases/Interfaces
+mkdir -p Repositories/Interfaces
+
+# Consoleへ移動
+cd Console
+
+# ディレクトリ自動作成用プログラムをclone
+git clone https://github.com/kouhei-github/Make-DDD-For-Laravel-Stubs.git Commands
+cd Commands
+rm -rf .git
+
+cd $CURRENT
+
+
 ```
 
-# Usage
+artisan や app があるディレクトリで下記を実行
+
+```bash
+# ディレクトリの作成等を自動でやってくれる
+$ sh make-stub-file.sh
+```
+
+# artisan コマンドの使い方
 
 下記コマンドで
 
