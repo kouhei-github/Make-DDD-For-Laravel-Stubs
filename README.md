@@ -3,18 +3,14 @@
 Laravel project の app/Console は以下で実行
 Service, Repository, UseCase, Interface の作成等を自動で行うコマンドを作成する
 
-```
-git clone
-```
-
 # Installation
 
 Requirement で列挙したライブラリなどのインストール方法を説明する
 
 ```bash
-git clone https://github.com/kouhei-github/Make-DDD-For-Laravel-Stubs.git Commands
-cd Commands
-rm -rf .git
+$ git clone https://github.com/kouhei-github/Make-DDD-For-Laravel-Stubs.git Commands
+$ cd Commands
+$ rm -rf .git
 ```
 
 # Usage
@@ -23,19 +19,19 @@ rm -rf .git
 
 ```bash
 # serviceの作成
-php artisan make:service SampleService
+$ php artisan make:service SampleService
 # serviceインターフェースの作成
-php artisan make:serviceInterface SampleServiceInterface
+$ php artisan make:serviceInterface SampleServiceInterface
 
 # repositoryの作成
-php artisan make:repository SampleRepository
+$ php artisan make:repository SampleRepository
 # repositoryインターフェースの作成
-php artisan make:repositoryInterface SampleRepositoryInterface
+$ php artisan make:repositoryInterface SampleRepositoryInterface
 
 # usecaseの作成
-php artisan make:usecase SampleUseCase
+$ php artisan make:usecase SampleUseCase
 # usecaseインターフェースの作成
-php artisan make:useCaseInterface SampleUseCaseInterface
+$ php artisan make:useCaseInterface SampleUseCaseInterface
 ```
 
 # Note
